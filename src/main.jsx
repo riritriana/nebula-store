@@ -5,10 +5,38 @@ import "./index.css";
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
-import Contact from "./pages/Contact.jsx";
+// import Contact from "./pages/Contact.jsx";
 import { RouterProvider } from "react-router-dom";
+import Login from "./pages/Login.jsx";
+import Register from "./pages/Register.jsx";
 
+// const pages = [
+//   {
+//     path: "/",
+//     element: <Login />,
+//   },
+//   {
+//     path: "/register",
+//     element: <Register />,
+//   },
+//   {
+//     children: [
+//       {
+//         path: "/",
+//         element: <Home />,
+//       },
+//       {
+//         path: "/about",
+//         element: <About />,
+//       },
+//     ],
+//   },
+// ];
 const router = createBrowserRouter([
+  // {
+  //   element: <App />,
+  //   children: pages,
+  // },
   {
     path: "/",
     element: <App />,
@@ -21,9 +49,17 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About />,
       },
+      // {
+      //   path: "/contact",
+      //   element: <Contact />,
+      // },
       {
-        path: "/contact",
-        element: <Contact />,
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       },
     ],
   },

@@ -1,4 +1,4 @@
-import { Home, Info, Contact } from "lucide-react";
+import { Home, Info } from "lucide-react";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { KrjContext } from "../App";
@@ -21,9 +21,9 @@ export default function Header() {
             <Info />
             <Link to="/about">About</Link>
           </li>
-          <li className="flex items-center gap-2 cursor-pointer">
-            <Contact />
-            <Link to="/contact">Contact</Link>
+          <li className="flex items-center gap-2 cursor-pointer bg-blue-500 px-4">
+            {/* <Contact /> */}
+            <Link to="/login">Login</Link>
           </li>
           {/*    const { keranjang } = useContext(KrjContext);
  import usecontext dan krj context dari app*/}
